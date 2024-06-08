@@ -1,0 +1,233 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ReservEat</title>
+
+    <!-- FONTS -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ICONS FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR START -->
+    <header>
+      <img src="img/hbeng.png" alt="" />
+
+      <div class="navbar-nav">
+        <ul class="navbar-ul">
+          <li><a href="landing.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="ongoing.html">Ongoing</a></li>
+          <li><a href="history.html">History</a></li>
+          <li>
+            <a href="reservation.html" class="rsv">
+              <button>Reservation</button></a
+            >
+          </li>
+          <li>
+            <a href="profile.html" class="nav-profile">
+              <i class="fa-regular fa-user"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <a href="#ham-menu" class="nav-hamburgermenu" id="hamburger-menu">
+        <i class="fa-solid fa-bars"></i>
+      </a>
+    </header>
+    <!-- NAVBAR END -->
+
+    <!-- HISTORY START -->
+    <section class="history-container">
+      <div class="title">
+        <h2>History</h2>
+      </div>
+      <div class="history-tabs">
+        <!-- TAB START-->
+        <button class="tab-button active" data-tab="completed">
+          Completed
+        </button>
+        <button class="tab-button" data-tab="cancelled">Cancelled</button>
+        <button class="tab-button" data-tab="requested">Requested</button>
+      </div>
+      <!-- TAB END -->
+
+      <!-- Completed list -->
+      <div class="history-list">
+        <div class="history-content active" id="completed">
+          <div class="history-item">
+            <div class="history-date">Tuesday, 07 May 2024</div>
+            <div class="history-detail">
+              <i class="fa-regular fa-clock"></i>
+              <h3>10.00 AM - 10.30 AM</h3>
+            </div>
+            <div class="history-detail">
+              <i class="fa-solid fa-user"></i>
+              <h3>8 people</h3>
+            </div>
+            <div class="history-detail">
+              <i class="fa-solid fa-circle-info"></i>
+              <h3>03-A</h3>
+            </div>
+            <div class="payment-detail">
+              <h2>Total paid: Rp220.000,00</h2>
+              <i class="fa-solid fa-receipt"></i>
+            </div>
+          </div>
+
+          <div class="history-item">
+            <div class="history-date">Tuesday, 07 May 2024</div>
+            <div class="history-detail">
+              <i class="fa-regular fa-clock"></i>
+              <h3>10.00 AM - 10.30 AM</h3>
+            </div>
+            <div class="history-detail">
+              <i class="fa-solid fa-user"></i>
+              <h3>8 people</h3>
+            </div>
+            <div class="history-detail">
+              <i class="fa-solid fa-circle-info"></i>
+              <h3>03-A</h3>
+            </div>
+            <div class="payment-detail">
+              <h2>Without pre-order</h2>
+              <i class="fa-solid fa-receipt"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cancelled list -->
+        <div class="history-content" id="cancelled">
+          <div class="history-item">
+            <div class="history-date">Tuesday, 18 May 2024</div>
+            <div class="history-detail">
+              <i class="fa-regular fa-clock"></i>
+              <h3>10.00 AM - 10.30 AM</h3>
+            </div>
+            <div class="history-detail">
+              <i class="fa-solid fa-user"></i>
+              <h3>8 people</h3>
+            </div>
+            <div class="history-detail">
+              <i class="fa-solid fa-circle-info"></i>
+              <h3>03-A</h3>
+            </div>
+            <div class="payment-detail">
+              <a href="#transaction">Payment Detail</a>
+              <i class="fa-solid fa-receipt"></i>
+            </div>
+          </div>
+        </div>
+        <!-- Requested list -->
+        <div class="history-content" id="requested">
+          <div class="history-item">
+            <div class="history-date">Tuesday, 25 May 2024</div>
+            <div class="history-detail">
+              <i class="fa-regular fa-clock"></i>
+              <h3>10.00 AM - 10.30 AM</h3>
+            </div>
+            <div class="history-detail">
+              <i class="fa-solid fa-user"></i>
+              <h3>8 people</h3>
+            </div>
+            <div class="history-detail">
+              <i class="fa-solid fa-circle-info"></i>
+              <h3>03-A</h3>
+            </div>
+            <div class="payment-detail">
+              <h2>Without pre-order</h2>
+              <i class="fa-solid fa-receipt"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- HISTORY END -->
+
+    <!-- FOOTER START -->
+    <footer>
+      <div class="footer-container">
+        <div class="coto-hbeng">
+          <h1>Coto HB'Eng</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+            possimus, obcaecati et vero provident veniam consequuntur earum
+            pariatur quisquam laboriosam. Aliquam voluptatum rem laudantium esse
+            et, consequuntur dolorum voluptatibus impedit molestias corrupti
+            quae soluta debitis, labore error aut nemo doloribus.
+          </p>
+        </div>
+
+        <div class="open-hours">
+          <h1>Open Hours</h1>
+
+          <div class="schedule">
+            <div class="day">
+              <h2>Monday</h2>
+              <h2>Tuesday</h2>
+              <h2>Wednesday</h2>
+              <h2>Thursday</h2>
+              <h2>Friday</h2>
+              <h2>Saturday</h2>
+              <h2>Sunday</h2>
+            </div>
+
+            <div class="hours">
+              <h2>06.00 AM - 10.00 PM</h2>
+              <h2>06.00 AM - 10.00 PM</h2>
+              <h2>06.00 AM - 10.00 PM</h2>
+              <h2>06.00 AM - 10.00 PM</h2>
+              <h2>06.00 AM - 10.00 PM</h2>
+              <h2>06.00 AM - 10.00 PM</h2>
+              <h2>06.00 AM - 10.00 PM</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact">
+          <h1>Contact</h1>
+          <div class="icon">
+            <i class="fa-solid fa-location-dot"></i>
+            <h2>Jl. Masjid Raya, Kota Sorong</h2>
+          </div>
+          <div class="icon">
+            <i class="fa-solid fa-phone"></i>
+            <h2>+62 821-2231-4089</h2>
+          </div>
+          <div class="icon">
+            <i class="fa-regular fa-envelope"></i>
+            <h2>cotohbengowner@gmail.com</h2>
+          </div>
+          <div class="icon">
+            <i class="fa-brands fa-facebook-f"></i>
+            <h2>Coto HBM</h2>
+          </div>
+          <div class="icon">
+            <i class="fa-brands fa-instagram"></i>
+            <h2>@coto_hbeng</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="rights">
+        <h3>© 2024 Coto HB'Eng - All rights reserved.</h3>
+      </div>
+    </footer>
+    <!-- FOOTER END -->
+    <script src="tabs.js"></script>
+  </body>
+</html>
