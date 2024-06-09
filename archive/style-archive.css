@@ -648,19 +648,6 @@ footer {
   margin: 20px 0;
 }
 
-.no-history-items {
-  display: flex;
-  justify-content: center;
-  margin-top: 4rem;
-  height: 100px;
-  text-align: center;
-}
-
-.no-history-items h4 {
-  font-size: 20px;
-  font-weight: 400;
-}
-
 .payment-detail {
   display: flex;
   align-items: center;
@@ -821,8 +808,8 @@ footer {
   height: 100%;
   position: fixed;
   top: 0;
-  /* right: 0; */
-  right: -700px;
+  right: 0;
+  /* right: -700px; */
   background-color: var(--secondary);
   transition: right 0.3s ease-in-out;
   z-index: 1001;
@@ -851,58 +838,13 @@ footer {
 }
 
 .individual-cart-item {
-  display: block;
-  padding: 10px 10px;
-  border-radius: 5px;
-  margin-bottom: 6px;
-  color: black;
-  border: 2px solid var(--primary);
-}
-
-.counter {
-  display: none;
-}
-
-.menuName {
-  font-weight: 600;
-  font-size: 18px;
-  margin-bottom: 5px;
-}
-
-.amount-and-price {
-  display: flex;
-  align-items: end;
-}
-
-.times {
-  margin: 0 5px;
-}
-
-.line-2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.modified-amount {
-  display: flex;
-  justify-content: right;
-  align-items: center;
-}
-
-.line-2 .amount {
-  font-weight: 600;
-}
-
-.line-2 .totalPrice {
-  font-weight: 600;
-}
-
-.plus-minus {
-  background-color: var(--primary);
-  padding: 5px;
-  margin: 0 9px;
+  padding: 10px 5px;
   border-radius: 5px;
+  color: black;
+  border: 2px solid var(--primary);
 }
 
 .cart-items {
@@ -979,73 +921,6 @@ footer {
 
 .checkout-btn:hover {
   background-color: var(--background);
-}
-
-/* RESERVATION - DATE AND TIME */
-.rsv-col-12 {
-  width: 100%;
-}
-
-.rsv-row {
-  display: flex;
-  justify-content: space-between;
-  padding: 9px 30px;
-}
-
-.rsv-col-6 {
-  width: 48%;
-}
-
-.rsv-col-3 {
-  width: 30%;
-}
-
-.rsv-head {
-  text-align: center;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-}
-
-.rsv-head h1 {
-  font-size: 30px;
-  color: var(--background);
-  background-color: var(--primary);
-  padding: 10px 5px;
-}
-
-.rsv-body p {
-  font-size: 16px;
-  font-weight: 600;
-}
-
-.rsv-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  min-height: 80vh;
-  overflow-y: auto;
-  padding: 20px 15px;
-}
-
-.rsv-body-box {
-  padding: 16px 2px;
-}
-
-.rsv-container input,
-textarea {
-  width: 100%;
-  background-color: var(--background);
-  padding: 7px;
-  margin-top: 5px;
-  font-size: 13px;
-}
-
-.rsv-body {
-  width: 600px;
-  background-color: var(--secondary);
-  border-radius: 12px;
-  margin-top: 11rem;
 }
 
 /* MEDIA QUERIES */
@@ -1143,12 +1018,12 @@ textarea {
 
   /* UNTUK GARIS BAWAH MASING-MASING MENU */
   /* .navbar-nav li::after {
-    transform-origin: 0 0;
-  }
-
-  .navbar-nav li:hover::after {
-    transform: scaleX(0.2);
-  } */
+      transform-origin: 0 0;
+    }
+  
+    .navbar-nav li:hover::after {
+      transform: scaleX(0.2);
+    } */
 }
 
 /* MOBILE PHONE */
@@ -1184,39 +1059,39 @@ footer {
 }
 
 /* .navbar {
-  display: flex;
-  align-items: center !important;
-  padding: 12px 7%;
-  background-color: var(--primary);
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 9999;
-}
-
-.navbar-logo img {
-  width: 120px;
-  height: 60px;
-  margin-right: 460px;
-}
-
-.navbar ul {
-  display: flex;
-}
-
-.navbar ul li {
-  list-style: none;
-}
-
-.navbar .navbar-nav a {
-  color: white;
-  justify-content: space-between;
-  margin: 0 10px;
-  font-size: 18px;
-}
-
-.navbar .reserve-nav {
-  background: var(--button);
-  border: 5px solid var(--button);
-} */
+    display: flex;
+    align-items: center !important;
+    padding: 12px 7%;
+    background-color: var(--primary);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+  }
+  
+  .navbar-logo img {
+    width: 120px;
+    height: 60px;
+    margin-right: 460px;
+  }
+  
+  .navbar ul {
+    display: flex;
+  }
+  
+  .navbar ul li {
+    list-style: none;
+  }
+  
+  .navbar .navbar-nav a {
+    color: white;
+    justify-content: space-between;
+    margin: 0 10px;
+    font-size: 18px;
+  }
+  
+  .navbar .reserve-nav {
+    background: var(--button);
+    border: 5px solid var(--button);
+  } */

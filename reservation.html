@@ -53,56 +53,63 @@
     </header>
     <!-- NAVBAR END -->
 
-    <!-- PROFILE START -->
-    <section class="profile">
-      <div class="title">
-        <h2>Profile</h2>
-      </div>
-
-      <div class="information-container">
-        <div class="account-information">
-          <div class="sub-title">
-            <h2>Name</h2>
-          </div>
-          <div class="info">
-            <h3>Hikaru</h3>
-          </div>
-          <div class="line1"></div>
-
-          <div class="sub-title">
-            <h2>Phone number</h2>
-          </div>
-          <div class="info">
-            <h3>082194229871</h3>
-          </div>
-          <div class="line1"></div>
-
-          <div class="sub-title">
-            <h2>Password</h2>
-          </div>
-          <div class="info">
-            <h3>********</h3>
-          </div>
-          <div class="line1"></div>
+    <!-- RESERVATION FORM -->
+    <div class="rsv-container">
+      <div class="rsv-body">
+        <div class="rsv-head">
+          <h1>Book your table</h1>
         </div>
-      </div>
 
-      <div class="information-container">
-        <div class="option">
-          <div class="info">
-            <a href="ongoing.html">Ongoing Reservations</a>
-            <i class="fa-solid fa-chevron-right"></i>
-          </div>
-          <div class="line1"></div>
-          <div class="info">
-            <a href="history.html">Reservation History</a>
-            <i class="fa-solid fa-chevron-right"></i>
-          </div>
-        </div>
-      </div>
-    </section>
+        <form class="rsv-body-box">
+          <div class="rsv-row">
+            <div class="rsv-col-6 rsv-name">
+              <p>Name</p>
+              <input
+                type="text"
+                name="fname"
+                id="fname"
+                placeholder="Input Your Name"
+              />
+            </div>
 
-    <!-- PROFILE END -->
+            <div class="rsv-col-6 rsv-telephone">
+              <p>Telephone</p>
+              <input
+                type="text"
+                name="telp"
+                id="telp"
+                placeholder="Input Your Telephone"
+              />
+            </div>
+          </div>
+
+          <div class="rsv-row">
+            <div class="rsv-col-6 rsv-name">
+              <p>Select Date</p>
+              <input type="date" name="date" id="date" />
+            </div>
+
+            <div class="rsv-col-6 rsv-telephone">
+              <p>Select Time</p>
+              <input type="time" name="time" id="time" />
+            </div>
+          </div>
+
+          <div class="rsv-row">
+            <div class="rsv-col-12 rsv-notes">
+              <p>Notes</p>
+              <textarea
+                name="messages"
+                id="messages"
+                cols="10"
+                rows="10"
+                placeholder="Leave any messages"
+              ></textarea>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
 
     <!-- FOOTER START -->
     <footer>
@@ -174,6 +181,7 @@
       </div>
     </footer>
     <!-- FOOTER END -->
+
     <script src="script.js"></script>
   </body>
 </html>
