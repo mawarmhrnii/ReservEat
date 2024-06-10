@@ -1020,6 +1020,7 @@ footer {
 
 .rsv-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -1046,6 +1047,339 @@ textarea {
   background-color: var(--secondary);
   border-radius: 12px;
   margin-top: 11rem;
+}
+
+/* Button container styling */
+.button-rsv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Ensure it takes full width */
+  margin: 40px 0; /* Add margin for spacing */
+}
+
+/* Submit button styling */
+.submit-rsv a {
+  width: 320px; /* Set a fixed width for the button */
+  height: 40px; /* Set a fixed height for the button */
+  background-color: var(--primary);
+  border-radius: 5px;
+  margin: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none; /* Remove underline from the link */
+  color: var(--background); /* Default text color */
+}
+
+.submit-rsv:hover a {
+  background-color: var(--button);
+}
+
+/* Specific styles for rsv-reserve */
+.rsv-reserve a {
+  background: var(--reserve);
+  color: var(--primary);
+}
+
+/* Ensure hover color for rsv-reserve */
+.rsv-reserve:hover a {
+  background-color: var(--button);
+  color: var(--background);
+}
+
+/* RESERVATION - SELECT TABLE */
+
+.table-container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.table-container .title {
+  padding: 9rem 0 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary);
+}
+
+.table-container .title h2 {
+  margin: 0 25px;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.table-map {
+  justify-content: center;
+}
+
+.table-map img {
+  width: 100%;
+}
+
+.table-title {
+  padding-top: 30px;
+  font-size: 17px;
+  margin: 10px 0;
+  color: var(--primary);
+}
+
+.status-table {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.available,
+.unavailable {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.available h4,
+.unavailable h4 {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0 10px;
+}
+
+.status-available {
+  padding: 7px 8px;
+  border-radius: 50%;
+  background-color: var(--primary);
+}
+
+.status-unavailable {
+  padding: 7px 8px;
+  border-radius: 50%;
+  background-color: #d9d9d9;
+}
+
+/* DROPDOWN TABLE */
+.dropdown-table {
+  width: 12rem;
+  position: relative;
+  /* margin: 2em; */
+}
+
+.dropdown-table * {
+  box-sizing: border-box;
+}
+
+.select-table {
+  background-color: var(--secondary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px var(--primary) solid;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 5px;
+  padding: 10px 18px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.select-clicked {
+  border: 2px var(--button) solid;
+  box-shadow: 0 0 0.8em var(--button);
+}
+
+.select-table:hover {
+  background: var(--button);
+  color: var(--background);
+}
+
+.caret {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 6px solid var(--primary);
+  transition: 0.3s;
+}
+
+.caret-rotate {
+  transform: rotate(180deg);
+}
+
+.table-list {
+  list-style: none;
+  padding: 0.2em 0.5em;
+  background: var(--reserve);
+  border: 2px var(--primary) solid;
+  box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  color: var(--background);
+  position: absolute;
+  top: 46px;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
+  opacity: 0;
+  display: none;
+  transition: 0.2s;
+  z-index: 1;
+}
+
+.table-list .unavailable {
+  background-color: #d9d9d9;
+  color: #313131;
+}
+
+.table-list li {
+  padding: 10px 16px;
+  margin: 3px 0;
+  border-radius: 9px;
+  cursor: pointer;
+  font-size: 15px;
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.table-list li:hover {
+  background: var(--primary);
+  color: var(--background);
+}
+
+/* Later in js */
+.drop-active {
+  background: var(--button);
+  color: var(--background);
+}
+
+/* Later in js */
+.list-open {
+  display: block;
+  opacity: 1;
+}
+
+/* RESERVATION CONFIRMATION */
+/* Container for the confirmation message */
+.reservation-message {
+  padding: 9rem 10rem 0 10rem;
+  background-color: #fff9e6;
+  color: var(--primary);
+  display: flex;
+  flex-direction: column;
+}
+.thanks h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.thanks h4 {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.detail-box {
+  background-color: #ffdeac;
+  padding: 1rem;
+  border: 1px solid #e09142;
+  border-radius: 5px;
+}
+
+.detail-box p {
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0.5rem 0;
+  display: flex;
+}
+
+.detail-box p strong {
+  font-weight: 700;
+  color: var(--primary);
+  width: 100px;
+}
+
+.details {
+  flex: 1; /* Take the remaining space */
+  text-align: left; /* Ensure left alignment */
+}
+
+/* WITH DETAIL MENU */
+.your-order {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.individual-item {
+  display: block;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  color: var(--primary);
+  background-color: var(--reserve);
+  border: 2px solid var(--primary);
+}
+
+.individual-item .line-2 i {
+  background-color: var(--primary);
+  color: var(--background);
+  padding: 5px;
+  margin: 0 9px;
+  border-radius: 5px;
+}
+
+/* PAYMENT */
+/* Container for the payment section */
+.payment-container {
+  text-align: center;
+}
+
+/* Title styling */
+.payment-qr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 32rem;
+  margin-bottom: 2rem;
+}
+
+.payment-qr img {
+  max-width: 100%;
+  height: auto;
+}
+
+.payment-info {
+  font-size: 20px;
+  color: var(--primary);
+}
+
+.payment-container .title {
+  padding-top: 8rem;
+  padding-bottom: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary);
+}
+
+.payment-container .title h2 {
+  margin: 0 25px;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+/* STATUS PAYMENT */
+.pay-success {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10rem 28rem 2rem 28rem;
+  margin-bottom: 2rem;
+}
+
+.pay-success img {
+  max-width: 100%;
+  height: auto;
 }
 
 /* MEDIA QUERIES */

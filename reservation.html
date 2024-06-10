@@ -54,62 +54,48 @@
     <!-- NAVBAR END -->
 
     <!-- RESERVATION FORM -->
-    <div class="rsv-container">
-      <div class="rsv-body">
-        <div class="rsv-head">
-          <h1>Book your table</h1>
+    <section class="reservation">
+      <div class="rsv-container">
+        <div class="rsv-body">
+          <div class="rsv-head">
+            <h1>Book your table</h1>
+          </div>
+
+          <form class="rsv-body-box">
+            <div class="rsv-row">
+              <div class="rsv-col-6 rsv-name">
+                <p>Select Date</p>
+                <input type="date" name="date" id="date" />
+              </div>
+
+              <div class="rsv-col-6 rsv-telephone">
+                <p>Select Time</p>
+                <input type="time" name="time" id="time" />
+              </div>
+            </div>
+
+            <div class="rsv-row">
+              <div class="rsv-col-12 rsv-notes">
+                <p>Notes</p>
+                <textarea
+                  name="messages"
+                  id="messages"
+                  cols="10"
+                  rows="10"
+                  placeholder="Leave any messages"
+                ></textarea>
+              </div>
+            </div>
+          </form>
         </div>
-
-        <form class="rsv-body-box">
-          <div class="rsv-row">
-            <div class="rsv-col-6 rsv-name">
-              <p>Name</p>
-              <input
-                type="text"
-                name="fname"
-                id="fname"
-                placeholder="Input Your Name"
-              />
-            </div>
-
-            <div class="rsv-col-6 rsv-telephone">
-              <p>Telephone</p>
-              <input
-                type="text"
-                name="telp"
-                id="telp"
-                placeholder="Input Your Telephone"
-              />
-            </div>
-          </div>
-
-          <div class="rsv-row">
-            <div class="rsv-col-6 rsv-name">
-              <p>Select Date</p>
-              <input type="date" name="date" id="date" />
-            </div>
-
-            <div class="rsv-col-6 rsv-telephone">
-              <p>Select Time</p>
-              <input type="time" name="time" id="time" />
-            </div>
-          </div>
-
-          <div class="rsv-row">
-            <div class="rsv-col-12 rsv-notes">
-              <p>Notes</p>
-              <textarea
-                name="messages"
-                id="messages"
-                cols="10"
-                rows="10"
-                placeholder="Leave any messages"
-              ></textarea>
-            </div>
-          </div>
-        </form>
       </div>
-    </div>
+
+      <div class="button-rsv">
+        <div class="submit-rsv rsv-select">
+          <a href="reservation2.html">Select table</a>
+        </div>
+      </div>
+    </section>
 
     <!-- FOOTER START -->
     <footer>
