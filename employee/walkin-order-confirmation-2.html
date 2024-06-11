@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ReservEat</title>
+
+    <!-- FONTS -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ICONS FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../employee/employee-style.css" />
+  </head>
+
+  <body>
+    <!-- NAVBAR START -->
+    <header>
+      <div class="login-as">
+        <h4>Walk-in Order Confirmation</h4>
+      </div>
+
+      <div class="navbar-nav">
+        <ul class="navbar-ul">
+          <li class="employee-logout">
+            <a href="logout-page.html">
+              Logout
+              <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!-- NAVBAR END -->
+
+    <section class="menu-sales">
+      <div class="select-range">
+        <h1>Info:</h1>
+      </div>
+
+      <!-- INFORMATION -->
+      <div class="confirmation-info">
+        <div class="confirmation-row">
+          <h3>Cashier:</h3>
+          <h4>1</h4>
+        </div>
+        <div class="confirmation-row">
+          <h3>Waiter:</h3>
+          <h4>1</h4>
+        </div>
+        <div class="confirmation-row">
+          <h3>Date:</h3>
+          <h4>2024-06-10</h4>
+        </div>
+        <div class="confirmation-row">
+          <h3>Time:</h3>
+          <h4>13:11:21</h4>
+        </div>
+        <div class="confirmation-row">
+          <h3>Table:</h3>
+          <h4>5</h4>
+        </div>
+      </div>
+
+      <!-- WALKIN SALES START -->
+      <div class="walkin-sales">
+        <div class="title">
+          <h4>Cart:</h4>
+        </div>
+
+        <!-- TABLE START -->
+        <table class="content-table">
+          <thead>
+            <!-- JUDUL KOLOM / TABLE HEAD -->
+            <tr>
+              <th>Number</th>
+              <th>Menu</th>
+              <th>Price</th>
+              <th>Amount</th>
+              <th>Total Price</th>
+            </tr>
+          </thead>
+
+          <!-- ISI TABEL START-->
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Coto Makassar</td>
+              <td>Rp100.000</td>
+              <td>5</td>
+              <td>Rp500.000</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Coto Makassar</td>
+              <td>Rp100.000</td>
+              <td>5</td>
+              <td>Rp500.000</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Coto Makassar</td>
+              <td>Rp100.000</td>
+              <td>5</td>
+              <td>Rp500.000</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Coto Makassar</td>
+              <td>Rp100.000</td>
+              <td>5</td>
+              <td>Rp500.000</td>
+            </tr>
+          </tbody>
+          <!-- ISI TABEL END -->
+        </table>
+      </div>
+      <!-- TABLE END -->
+
+      <div class="cart-price">
+        <h1>Total cart price:</h1>
+        <h1>Rp24.000</h1>
+      </div>
+      <div class="cart-price">
+        <h1>Payment method:</h1>
+        <h1>QRIS</h1>
+      </div>
+
+      <!-- BACK BUTTON START -->
+      <div class="view-sales-button">
+        <div class="back-button">
+          <button type="button">Back to home</button>
+        </div>
+      </div>
+      <!-- BACK BUTTON END -->
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

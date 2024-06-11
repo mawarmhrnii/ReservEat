@@ -148,15 +148,18 @@ header .login-as h4 {
   margin-top: 1rem;
 }
 
-.sales-button a {
+.sales-button button {
   background-color: var(--button);
   color: var(--background);
   padding: 10px 15px;
   margin-right: 2rem;
   border-radius: 5px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
 }
 
-.sales-button:hover a {
+.sales-button:hover button {
   background-color: var(--primary);
 }
 
@@ -197,14 +200,120 @@ header .login-as h4 {
   margin-top: 2rem;
 }
 
-.range-button a {
+.range-button button {
   background-color: var(--primary);
   color: var(--background);
   padding: 10px 10px;
   margin-right: 2rem;
   border-radius: 5px;
+  cursor: pointer;
+  font-family: "Outfit", sans-serif;
+  font-size: 15px;
 }
 
-.range-button:hover a {
+.range-button:hover button {
   background-color: var(--button);
+}
+
+/* WALKIN ORDER CONFIRMATION */
+.confirmation-row {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.confirmation-info {
+  margin-top: 1rem;
+}
+
+.confirmation-info h3 {
+  font-weight: 600;
+  font-size: 18px;
+  margin-right: 4px;
+}
+
+.confirmation-info h4 {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.cart-price {
+  display: flex;
+}
+
+.cart-price h1 {
+  font-size: 28px;
+  margin-bottom: 2rem;
+  margin-right: 7px;
+}
+
+.payment-method .title h3 {
+  font-size: 20px;
+  margin-top: 0;
+}
+
+.payment-method input {
+  width: 18%;
+  background-color: var(--reserve);
+  border-radius: 4px;
+  padding: 7px;
+  margin-top: 5px;
+  font-size: 13px;
+}
+
+.back-button,
+.confirm-button {
+  margin-top: 1rem;
+}
+
+.back-button button {
+  background-color: #dddddd;
+  color: var(--primary);
+  padding: 10px 18px;
+  margin-right: 1rem;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.confirm-button button {
+  background-color: var(--button);
+  color: var(--background);
+  padding: 10px 18px;
+  margin-right: 1rem;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.confirm-button:hover button {
+  background-color: var(--primary);
+}
+
+.back-button:hover button {
+  background-color: var(--primary);
+  color: #dddddd;
+}
+
+/* WALKIN ORDER */
+
+.placecart-button {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.placecart-button button {
+  background-color: var(--button);
+  color: var(--background);
+  padding: 10px 15px;
+  margin-right: 2rem;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.placecart-button:hover button {
+  background-color: var(--primary);
 }
