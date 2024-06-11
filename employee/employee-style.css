@@ -325,3 +325,50 @@ header .login-as h4 {
 .placecart-button:hover button {
   background-color: var(--primary);
 }
+
+/* INCREASE DECREASE BUTTON */
+
+.decrease {
+  align-items: center;
+  justify-content: center;
+}
+
+.increase button,
+.decrease button {
+  background-color: var(--button);
+  color: var(--background);
+  padding: 2px 5px;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
+}
+
+.increase:hover button,
+.decrease:hover button {
+  background-color: var(--primary);
+}
+
+/* VIEW RESERVATION */
+.status-button {
+  align-items: center;
+  justify-content: center;
+}
+
+.status-button button {
+  background-color: var(--button);
+  color: var(--background);
+  padding: 10px 8px;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
+}
+
+.status-button:hover button {
+  background-color: var(--primary);
+}
