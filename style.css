@@ -1057,8 +1057,8 @@ textarea {
   margin: 40px 0;
 }
 
-.submit-rsv a {
-  width: 320px;
+.submit-rsv button {
+  width: 300px;
   height: 40px;
   background-color: var(--primary);
   border-radius: 5px;
@@ -1066,22 +1066,23 @@ textarea {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-decoration: none;
   color: var(--background);
+  font-size: 19px;
+  cursor: pointer;
 }
 
-.submit-rsv:hover a {
+.submit-rsv button:hover {
   background-color: var(--button);
 }
 
 /* Specific styles for rsv-reserve */
-.rsv-reserve a {
+.rsv-reserve button {
   background: var(--reserve);
   color: var(--primary);
 }
 
 /* Ensure hover color for rsv-reserve */
-.rsv-reserve:hover a {
+.rsv-reserve:hover button {
   background-color: var(--button);
   color: var(--background);
 }
