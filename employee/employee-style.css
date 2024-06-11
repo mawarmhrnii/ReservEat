@@ -157,6 +157,8 @@ header .login-as h4 {
   font-size: 15px;
   font-weight: 500;
   cursor: pointer;
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
 }
 
 .sales-button:hover button {
@@ -208,7 +210,7 @@ header .login-as h4 {
   border-radius: 5px;
   cursor: pointer;
   font-family: "Outfit", sans-serif;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .range-button:hover button {
@@ -274,6 +276,8 @@ header .login-as h4 {
   font-size: 15px;
   font-weight: 500;
   cursor: pointer;
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
 }
 
 .confirm-button button {
@@ -285,6 +289,8 @@ header .login-as h4 {
   font-size: 15px;
   font-weight: 500;
   cursor: pointer;
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
 }
 
 .confirm-button:hover button {
@@ -312,6 +318,8 @@ header .login-as h4 {
   font-size: 15px;
   font-weight: 500;
   cursor: pointer;
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
 }
 
 .placecart-button:hover button {
